@@ -1,0 +1,109 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "edge-eyJydW50aW1lIjoiZWRnZSJ9": {
+        "id": "edge-eyJydW50aW1lIjoiZWRnZSJ9",
+        "file": "build/server/edge-eyJydW50aW1lIjoiZWRnZSJ9/index.js",
+        "config": {
+          "runtime": "edge"
+        }
+      },
+      "node-eyJydW50aW1lIjoibm9kZSJ9": {
+        "id": "node-eyJydW50aW1lIjoibm9kZSJ9",
+        "file": "build/server/node-eyJydW50aW1lIjoibm9kZSJ9/index.js",
+        "config": {
+          "runtime": "node"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "routes/_index": "edge-eyJydW50aW1lIjoiZWRnZSJ9",
+      "routes/simple": "node-eyJydW50aW1lIjoibm9kZSJ9",
+      "routes/about": "node-eyJydW50aW1lIjoibm9kZSJ9"
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "app/root.tsx",
+        "config": {}
+      },
+      "routes/_index": {
+        "file": "app/routes/_index.tsx",
+        "id": "routes/_index",
+        "index": true,
+        "parentId": "root",
+        "config": {
+          "runtime": "edge"
+        }
+      },
+      "routes/simple": {
+        "file": "app/routes/simple.tsx",
+        "id": "routes/simple",
+        "path": "simple",
+        "parentId": "root",
+        "config": {
+          "runtime": "node"
+        }
+      },
+      "routes/about": {
+        "file": "app/routes/about.tsx",
+        "id": "routes/about",
+        "path": "about",
+        "parentId": "root",
+        "config": {
+          "runtime": "node"
+        }
+      }
+    }
+  },
+  "remixConfig": {
+    "appDirectory": "/home/cws/single-fetch-link-404-on-vercel/app",
+    "basename": "/",
+    "buildDirectory": "/home/cws/single-fetch-link-404-on-vercel/build",
+    "future": {
+      "v3_fetcherPersist": true,
+      "v3_relativeSplatPath": true,
+      "v3_throwAbortReason": true,
+      "v3_routeConfig": false,
+      "v3_singleFetch": true,
+      "v3_lazyRouteDiscovery": true,
+      "unstable_optimizeDeps": false
+    },
+    "manifest": false,
+    "publicPath": "/",
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "routes/_index": {
+        "file": "routes/_index.tsx",
+        "id": "routes/_index",
+        "index": true,
+        "parentId": "root"
+      },
+      "routes/simple": {
+        "file": "routes/simple.tsx",
+        "id": "routes/simple",
+        "path": "simple",
+        "parentId": "root"
+      },
+      "routes/about": {
+        "file": "routes/about.tsx",
+        "id": "routes/about",
+        "path": "about",
+        "parentId": "root"
+      }
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
