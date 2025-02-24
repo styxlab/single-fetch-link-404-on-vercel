@@ -36,10 +36,13 @@ export default function Index() {
             What&apos;s next?
           </p>
           <Link to="/about">
-            Navigate to About page
+            Navigate to About page and obseve 404 error!
           </Link>
+          <Link to="/about">
+            Navigate to About page - working with edge runtime?
+          </Link>          
           <a href="/simple">
-            Navigate to Simple page
+            Navigate to Simple page and verify it iw working fine!
           </a>
         </nav>
       </div>
