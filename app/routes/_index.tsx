@@ -1,7 +1,8 @@
 import { Link } from "@remix-run/react";
 import type { MetaFunction } from "@vercel/remix";
 
-export const config = { runtime: 'node' }
+// NOTE: When you switdh to node runtime, the first link is working again, bu then the second link fails!
+export const config = { runtime: 'edge' }
 
 export const meta: MetaFunction = () => {
   return [

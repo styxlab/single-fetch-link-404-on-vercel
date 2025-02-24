@@ -17,7 +17,8 @@ export default defineConfig({
         v3_fetcherPersist: true,
         v3_relativeSplatPath: true,
         v3_throwAbortReason: true,
-        v3_singleFetch: true,
+        // this option must be set to true in order to observe the error
+        v3_singleFetch: false,
         v3_lazyRouteDiscovery: true,
       },
     }),
