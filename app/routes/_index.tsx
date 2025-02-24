@@ -36,9 +36,9 @@ export default function Index() {
             What&apos;s next?
           </p>
           <Link to="/about">
-            Navigate to About page and obseve 404 error!
+            Navigate to About page and observe 404 error!
           </Link>
-          <Link to="/about">
+          <Link to="/edge">
             Navigate to About page - working with edge runtime?
           </Link>          
           <a href="/simple">
