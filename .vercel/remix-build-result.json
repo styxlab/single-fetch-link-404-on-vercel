@@ -19,7 +19,8 @@
     "routeIdToServerBundleId": {
       "routes/_index": "edge-eyJydW50aW1lIjoiZWRnZSJ9",
       "routes/simple": "node-eyJydW50aW1lIjoibm9kZSJ9",
-      "routes/about": "node-eyJydW50aW1lIjoibm9kZSJ9"
+      "routes/about": "node-eyJydW50aW1lIjoibm9kZSJ9",
+      "routes/edge": "edge-eyJydW50aW1lIjoiZWRnZSJ9"
     },
     "routes": {
       "root": {
@@ -54,20 +55,29 @@
         "config": {
           "runtime": "node"
         }
+      },
+      "routes/edge": {
+        "file": "app/routes/edge.tsx",
+        "id": "routes/edge",
+        "path": "edge",
+        "parentId": "root",
+        "config": {
+          "runtime": "edge"
+        }
       }
     }
   },
   "remixConfig": {
-    "appDirectory": "/home/cws/single-fetch-link-404-on-vercel/app",
+    "appDirectory": "/home/cws/lazy-route-discovery-link-404-on-vercel/app",
     "basename": "/",
-    "buildDirectory": "/home/cws/single-fetch-link-404-on-vercel/build",
+    "buildDirectory": "/home/cws/lazy-route-discovery-link-404-on-vercel/build",
     "future": {
       "v3_fetcherPersist": true,
       "v3_relativeSplatPath": true,
       "v3_throwAbortReason": true,
       "v3_routeConfig": false,
       "v3_singleFetch": true,
-      "v3_lazyRouteDiscovery": true,
+      "v3_lazyRouteDiscovery": false,
       "unstable_optimizeDeps": false
     },
     "manifest": false,
@@ -94,6 +104,12 @@
         "file": "routes/about.tsx",
         "id": "routes/about",
         "path": "about",
+        "parentId": "root"
+      },
+      "routes/edge": {
+        "file": "routes/edge.tsx",
+        "id": "routes/edge",
+        "path": "edge",
         "parentId": "root"
       }
     },
