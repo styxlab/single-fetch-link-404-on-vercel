@@ -1,7 +1,7 @@
 import { Link } from "@remix-run/react";
 import type { MetaFunction } from "@vercel/remix";
 
-export const config = { runtime: 'edge' }
+export const config = { runtime: 'node' }
 
 export const meta: MetaFunction = () => {
   return [
